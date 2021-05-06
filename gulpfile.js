@@ -7,7 +7,7 @@ let gulp = require('gulp'),
     cssmin = require('gulp-cssmin');
 
 gulp.task('sass', function () {
-    return gulp.src('build/sass/**/*.sass')
+    return gulp.src('sass/**/style.sass')
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(rename({suffix: '.min'}))
         .pipe(autoprefixer({
@@ -40,7 +40,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('build/sass/**/*.sass', gulp.parallel('sass'))
+    gulp.watch('sass/**/*.sass', gulp.parallel('sass'))
     gulp.watch('build/*.html', gulp.parallel('html'))
 });
 
