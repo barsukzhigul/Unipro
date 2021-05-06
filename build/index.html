@@ -6,6 +6,7 @@
     <title>Unipro</title>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/media.min.css">
 </head>
 <body>
 <header class="header">
@@ -38,28 +39,66 @@
     <section class="info">
         <div class="container">
             <div class="info__inner">
-                <div class="info__item news">
-                    Новости
-                </div>
-                <div class="info__item information">
-                    Раскрытие информации
-                </div>
-                <div class="info__item sales">
-                    Закупки и продажи
-                </div>
-                <div class="info__item block">
-                    Блок 3
-                </div>
+                <section class="info__inner-content">
+                    <div class="info__item news">
+                        Новости
+                    </div>
+                    <div class="info__item information">
+                        Раскрытие информации
+                    </div>
+                    <div class="info__item sales">
+                        Закупки и продажи
+                    </div>
+                    <div class="info__item block">
+                        Блок 3
+                    </div>
+                    <article id="item-1" class="info__item information-mobile">
+                        <header class="info__item-title">Раскрытие информации</header>
+                        <main class="info__item-content">
+                            <img src="img/town.jpg" alt="">
+                            <div>Размещен Ежеквартальный отчет эмитента за 1 квартал 2019 года</div>
+                            <div>Размещен Ежеквартальный отчет эмитента за 1 квартал 2019 года</div>
+                        </main>
+                    </article>
+                    <article id="item-2" class="info__item information-mobile">
+                        <header class="info__item-title">Раскрытие информации</header>
+                        <main class="info__item-content">
+                            <img src="img/town.jpg" alt="">
+                            <p>Размещен Ежеквартальный отчет эмитента за 1 квартал 2019 года</p>
+                            <p>Размещен Ежеквартальный отчет эмитента за 1 квартал 2019 года</p>
+                        </main>
+                    </article>
+                    <article id="item-3" class="info__item information-mobile">
+                        <header class="info__item-title">Раскрытие информации</header>
+                        <main class="info__item-content">
+                            <img src="img/town.jpg" alt="">
+                            <p>Размещен Ежеквартальный отчет эмитента за 1 квартал 2019 года</p>
+                            <p>Размещен Ежеквартальный отчет эмитента за 1 квартал 2019 года</p>
+                        </main>
+                    </article>
+                </section>
+                <section class="info__page-counter">
+                    <div class="info__page-selection">
+                        <button></button>
+                        <button></button>
+                    </div>
+                    <div class="info__page-show">
+                        <button></button>
+                    </div>
+                </section>
             </div>
         </div>
     </section>
-    <section class="addition">
+</main>
+<footer class="footer">
+    <section class="footer__addition">
         <div class="container">
             <div class="addition__inner">
 
             </div>
         </div>
     </section>
-</main>
+</footer>
+<script src="js/main.js"></script>
 </body>
 </html>

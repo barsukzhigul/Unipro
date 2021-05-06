@@ -8,7 +8,7 @@
 
 
 .header__logo
-  padding: 20px 0 5px 40px
+  margin: 20px 0 5px 40px
 
 .header__menu
   height: 39px
@@ -20,6 +20,7 @@
 .main-content__inner
   display: flex
   justify-content: space-between
+  align-items: flex-start
 
 .main-content__box
   position: relative
@@ -31,7 +32,7 @@
   padding-top: 131px
   height: 319px
 
-.info__inner
+.info__inner-content
   display: flex
   justify-content: space-between
   flex-flow: row
@@ -41,6 +42,7 @@
 .info__item
   min-width: 180px
   background-color: $g-block
+
   & + .info__item
     margin-left: 15px
 
@@ -60,6 +62,64 @@
 .block
   padding-top: 75px
   padding-left: 64px
+
+.information-mobile
+  min-width: 180px
+  width: 100%
+  position: relative
+  display: none
+
+.info__item-content
+  display: none
+
+
+.info__item--active
+  transition: all .3s
+  background-color: $g-active
+
+  .info__item-title
+    color: $blue
+    font-weight: 700
+    line-height: 21px
+  .info__item-content
+    background-color: $g-active
+    div
+      margin-top: 10px
+    img
+      position: absolute
+      left: 0
+      top: 0
+
+
+.info__page-counter
+  display: flex
+  justify-content: space-between
+  background-color: $g-bg
+  padding: 25px 0
+
+
+.info__page-selection
+  max-width: 664px
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background-color: #fff
+  height: 44px
+  margin-right: 20px
+
+  button
+    width: 44px
+    height: 44px
+    background-color: $g-block
+    border: none
+
+.info__page-show
+  button
+    width: 44px
+    height: 44px
+    background-color: $g-block
+    border: none
 
 .addition__inner
   margin-top: 35px
